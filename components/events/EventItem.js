@@ -1,13 +1,14 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import styles from './event-item.module.css'
 
 function EventItem(props) {
+
 
 const { title, image, date, location, id } = props
 
 // human readable date
-const humanReadableDate = new Date(date).toLocaleDateString(
-    en-US, {
+const humanReadableDate = new Date(date).toLocaleDateString(en-US, {
         day: 'numeric',
         month: 'long',
         year: 'numeric',
