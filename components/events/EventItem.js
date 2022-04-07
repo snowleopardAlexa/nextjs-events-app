@@ -13,9 +13,8 @@ const humanReadableDate = new Date(date).toLocaleDateString(
         year: 'numeric',
     }
 )
-
-
 const formattedAddress = location.replace(', ', '\n')
+const exploreLink = `/events/${id}`
 
     return (
       <li>
@@ -30,7 +29,7 @@ const formattedAddress = location.replace(', ', '\n')
            </div>
        </div>
        <div>
-           <Link href="/">Explore Event</Link>
+           <Link href={exploreLink}>Explore Event</Link>
        </div>
       </li>
     )
