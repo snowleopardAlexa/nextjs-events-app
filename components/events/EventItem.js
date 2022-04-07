@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 function EventItem(props) {
 
-const { title, image, data, location, id } = props
+const { title, image, date, location, id } = props
 
 // human readable date
 const humanReadableDate = new Date(date).toLocaleDateString(
@@ -15,17 +15,18 @@ const humanReadableDate = new Date(date).toLocaleDateString(
 )
 
 
+const formattedAddress = location.replace(', ', '\n')
 
     return (
       <li>
-       <Image src="" alt="event" />
+       <Image src={'/' + image} alt="event" />
        <div>
            <div><h2>{title}</h2></div>
            <div>
-               <time>DATA</time>
+               <time>{humanReadableDate}</time>
            </div>
            <div>
-               <address>ADDRESS</address>
+               <address>{formattedAddress}</address>
            </div>
        </div>
        <div>
