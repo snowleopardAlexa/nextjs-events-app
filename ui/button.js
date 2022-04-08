@@ -4,7 +4,7 @@ import styles from './button.module.css'
 
 const Button = (props) => {
   return (
-    <Link>
+    <Link href={props.link}>
       <a className={styles.btn}>{props.children}</a>
     </Link>
   )

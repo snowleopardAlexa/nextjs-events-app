@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from './event-item.module.css'
+import Button from '../../ui/Button'
 
 function EventItem(props) {
 
@@ -31,7 +32,7 @@ const exploreLink = `/events/${id}`
            </div>
        </div>
        <div className={styles.actions}>
-           <Link href={exploreLink}>Explore Event</Link>
+          <Button link={exploreLink}>Explore Event</Button>
        </div>
       </li>
     )
