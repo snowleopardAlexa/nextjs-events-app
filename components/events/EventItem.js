@@ -1,10 +1,10 @@
-import Link from 'next/link'
 import Image from 'next/image'
 import styles from './event-item.module.css'
+import Button from '../../ui/Button'
 
 function EventItem(props) {
 
-const { title, image, date, location, id } = props
+const { title, image, date, location, id, link } = props
 
 // human readable date
 const humanReadableDate = new Date(date).toLocaleDateString( 'en-US', {
@@ -31,7 +31,7 @@ const exploreLink = `/events/${id}`
            </div>
        </div>
        <div className={styles.actions}>
-           <Link href={exploreLink}>Explore Event</Link>
+        <Button link={exploreLink}>Explore Event</Button>
        </div>
       </li>
     )
