@@ -95,7 +95,7 @@
     }
   
     .actions {
-      flex-direction: row;
-      justify-content: flex-end;
+      flex-direction: column;
+      justify-content: center;
     }
   }
