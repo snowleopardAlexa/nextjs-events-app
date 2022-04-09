@@ -1,7 +1,7 @@
 const DUMMY_DATA = [
   {
     id: "1",
-    title: "Pets Lovers unite! On board!",
+    title: "Pets Lovers unite!",
     description:
       "All Pets Lovers and Pets Owners from New York City - come and join us!",
     location: "Wall Street 5, 98765 New York City, NY",
