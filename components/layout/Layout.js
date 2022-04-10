@@ -3,14 +3,12 @@ import MainHeader from './MainHeader'
 
 const Layout = (props) => {
   return (
-    <MainHeader>
     <Fragment>
-        <header></header>
+        <MainHeader />
         <main>
             {props.children}
         </main>
     </Fragment>
-    </MainHeader>
   )
 }
 
