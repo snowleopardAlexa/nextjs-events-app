@@ -1,5 +1,5 @@
-import { getAllEvents } from '../../dummy-data'
-import EventList from '../../components/events/event-list'
+import { getAllEvents } from '../../data/dummy-data'
+import EventList from '../../components/events/EventList'
 
 const AllEventsPage = () => {
   const events = getAllEvents()

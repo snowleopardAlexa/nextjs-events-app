@@ -7,7 +7,7 @@ import DateIcon from '../icons/date-icon'
 
 function EventItem(props) {
 
-const { title, image, date, location, id, link } = props
+const { title, image, date, location, id } = props
 
 // human readable date
 const humanReadableDate = new Date(date).toLocaleDateString( 'en-US', {
