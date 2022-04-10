@@ -1,3 +1,4 @@
+import Button from "../../ui/Button"
 
 const EventsSearch = (props) => {
   return (
@@ -26,6 +27,7 @@ const EventsSearch = (props) => {
               <option value="12">December</option>
             </select>
         </div>
+        <Button>Find Events</Button>
     </form>
   )
 }
